@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roblox Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+  <header class="header d-flex justify-content-between align-items-center bg-primary p-3">
+    <!-- LEFT SIDE -->
+    <div class="d-flex flex-column justify-content-between text-white">
+      <div id="titleAnimationBlock">
+        <h1 class="h1">Portfolio</h1>
+        <div class="bg-primary" id="titleBlocker"></div>
+      </div>
+      <div id="subheader">
+        <h2 class="h2 mb-0" style="color: black;">Roblox Edition</h2>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle text-light" type="button" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Quick Links</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="universalDropdown">
+          <a class="dropdown-item" href="../index.html">Home</a>
+          <a class="dropdown-item" href="../software">Software Engineer/Related</a>
+          <a class="dropdown-item disabled" href="/roblox">Roblox Studio</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <style>
+      #titleBlocker {
+        display: block;
+        width: 50%;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        /* start at top of parent */
+        left: 0px;
+        z-index: 5;
+
+        animation: titleUnblock 2s ease-out forwards;
+      }
+
+      @keyframes titleUnblock {
+        from {
+          transform: translateY(0px);
+        }
+
+        to {
+          transform: translateY(-100px);
+        }
+      }
+    </style>
+
+    <style>
+      main {
+        background-color: rgb(184, 208, 249);
+      }
+
+      #subheader {
+        opacity: 0;
+        animation: fadeOut 2s ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+
+  </header>
+
+  <main>
+    <div class="container py-1"></div>
+    <div class="alert alert-danger w-50 text-center mx-auto" role="alert">Commisions closed.</div>
+
+      <h1 class="text-center mb-4">Welcome Game Creator</h1>
+      <p class="text-center">What this portfolio includes:</p>
+      <ul class="list-group list-group-flush mb-5">
+        <li class="list-group-item">Developer Information</li>
+        <li class="list-group-item">Team Experience</li>
+        <li class="list-group-item">Scripting Experience</li>
+      </ul>
+
+      <!-- Developer Information -->
+      <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Developer Information</div>
+        <div class="card-body">
+          <p><strong>Devforum Profile:</strong> <a href="https://devforum.roblox.com/u/justin2710"
+              target="_blank">https://devforum.roblox.com/u/justin2710</a></p>
+          <p><strong>Roblox Profile:</strong> <a href="https://www.roblox.com/users/113784239/profile"
+              target="_blank">https://www.roblox.com/users/113784239/profile</a></p>
+          <p><strong>Age:</strong> 18</p>
+          <p><strong>Status:</strong> Student</p>
+        </div>
+      </div>
+
+      <!-- Team Experience -->
+      <div class="card mb-4">
+        <div class="card-header bg-success text-white">Team Experience</div>
+        <div class="card-body">
+          <p>I have worked in two groups so far, one is called <strong>Deniro Studios</strong>, the other is
+            <strong>Team Incremental</strong>, which I own.</p>
+          <p>Each group contains multiple developers assigned to tasks. I can work with others, offer scripting help,
+            develop modules for complex systems/game mechanics, and provide advice.</p>
+          <p>I can script anything in Roblox Studio in a steady process. There shouldn’t be a problem with any task I
+            take on.</p>
+        </div>
+      </div>
+
+      <!-- Scripting Experience -->
+      <div class="card mb-4">
+        <div class="card-header bg-warning text-dark">Scripting Experience</div>
+        <div class="card-body">
+          <p>I have scripted many games and their respective systems. Currently, I am working on 4 games; two share
+            scripts while others are part of team projects.</p>
+
+          <h5>Tsunami Survival</h5>
+          <ul>
+            <li>Voting map system example: <a href="https://www.youtube.com/watch?v=M_tH2QcCLCU" target="_blank">YouTube
+                Link</a></li>
+            <li>Wave destruction example: <a href="https://www.youtube.com/watch?v=S9_hwBduuX4" target="_blank">YouTube
+                Link</a></li>
+          </ul>
+
+          <h5>Taisho (Samurai Game)</h5>
+          <ul>
+            <li>Block system / perfect parries: <a href="https://www.youtube.com/watch?v=3Bg9ye6JGFY"
+                target="_blank">YouTube Link</a></li>
+            <li>Cinematic queue system: <a href="https://www.youtube.com/watch?v=9uQ4ZlGl1AY" target="_blank">YouTube
+                Link</a></li>
+            <li>Climbing system: <a href="https://www.youtube.com/watch?v=8gPulV0ytYA" target="_blank">YouTube Link</a>
+            </li>
+          </ul>
+
+          <p><strong>Scripts I made for these games:</strong> <a
+              href="https://drive.google.com/drive/folders/1-mHefzyZtqm9JnviMmfM-JzzI6MEZbVY?usp=sharing"
+              target="_blank">→ Portfolio Stuff ←</a></p>
+
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="card mb-4">
+        <div class="card-header bg-danger text-white">Expectations for Payment</div>
+        <div class="card-body">
+          <p>Accepted payment: USD or Robux (Robux is more expensive).</p>
+          <p>Prices are negotiated depending on workload, here's an example:</p>
+          <ul>
+            <li>7k Robux/week (you pay tax - minimum)</li>
+            <li>$30/week minimum</li>
+            <li>2 hours (minimum)</li>
+          </ul>
+          <p>The amount paid will not affect the quality of work. Weekly commissions are possible. Late payments must be
+            avoided; failure may pause services.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 speed0fLight's Portfolio</p>
+      <div class="h6">
+        Roblox Links:
+      </div>
+      <p class="mb-0">
+        <a href="https://www.roblox.com/users/113784239/profile" target="_blank" class="text-light me-3">Roblox</a>
+        <a href="https://devforum.roblox.com/u/justin2710" target="_blank" class="text-light">DevForum</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

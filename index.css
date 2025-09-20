@@ -1,0 +1,69 @@
+main {
+    background-color: rgb(39, 97, 214);
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-bottom: 0;
+}
+
+#maininfo {
+    opacity: 0;
+    animation: fadeinUpwards 2s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeinUpwards {
+
+    /* Starts down, pulls it up */
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#titleBlocker {
+    display: block;
+    width: 50%;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    /* start at top of parent */
+    left: 0px;
+    z-index: 5;
+
+    animation: titleUnblock 2s ease-out forwards;
+}
+
+@keyframes titleUnblock {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+#subheader {
+    opacity: 0;
+    animation: fadeOut 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
