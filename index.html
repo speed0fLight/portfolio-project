@@ -6,49 +6,53 @@
 
   <meta charset="UTF-8">
   <title>My Portfolio</title>
+
   <link rel="stylesheet" href="index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+  <link rel="icon" type="images/svg+xml" href="images/favicon.svg">
 
 </head>
 
 <body>
   <header class="header d-flex justify-content-between align-items-center bg-primary p-3">
-  <!-- LEFT SIDE -->
-  <div class="d-flex flex-column justify-content-between text-white">
-  <div id="titleAnimationBlock">
-    <h1 class="h1">Welcome to My Portfolio</h1>
-    <div class="bg-primary" id="titleBlocker"></div>
-  </div>
-  <div id="subheader">
-    <h2 class="h2 mb-0" style="color: black;">Select which part you'd like to explore:</h2>
-  </div>
-</div>
-
-  <!-- RIGHT SIDE -->
-  <div>
-    <div class="dropdown">
-      <button class="btn btn-info dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Quick Links</button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item disabled" href="index.html">Home</a>
-        <a class="dropdown-item" href="/software">Software Engineer/Related</a>
-        <a class="dropdown-item" href="/roblox">Roblox Studio</a>
+    <!-- LEFT SIDE -->
+    <div class="d-flex flex-column justify-content-between text-white">
+      <div id="titleAnimationBlock">
+        <h1 class="h1">Welcome to My Portfolio</h1>
+        <div class="bg-primary" id="titleBlocker"></div>
+      </div>
+      <div id="subheader">
+        <h2 class="h2 mb-0" style="color: black;">Select which part you'd like to explore:</h2>
       </div>
     </div>
-  </div>
+
+    <!-- RIGHT SIDE -->
+    <div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle text-light" type="button" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Quick Links</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item disabled" href="index.html">Home</a>
+          <a class="dropdown-item" href="/software">Software Engineer/Related</a>
+          <a class="dropdown-item" href="/roblox">Roblox Studio</a>
+        </div>
+      </div>
+    </div>
 
   </header>
   <!-- v-- MAIN SECTION --v -->
   <main>
-   <div style="display: block; height: 100px;"></div> <!-- filler -->
+    <div style="display: block; height: 100px;"></div> <!-- filler -->
     <div id="maininfo">
+      <div class="w-50 mx-auto rounded mb-5" style="background-color: rgba(0, 0, 0, 0.245);"> <!-- Background for cards -->
       <div class="h2 mt-3 text-center mx-auto w-50" style="color: white;">Quick Cards</div>
       <hr class="mx-auto" style="width: 50%; border-top: 2px solid;">
 
-      <div class="card mx-auto mt-2 mb-5" style="width: 50%;"> <!-- Software Engineering */ -->
+      <div class="shadow-lg card mx-auto mt-2 mb-5" style="width: 80%;"> <!-- Software Engineering */ -->
         <div class="card-body">
 
           <h5 class="card-title">💻 | Software Engineering</h5>
@@ -58,9 +62,9 @@
         </div>
       </div>
 
-      <div class="card mx-auto mt-5 mb-5" style="width: 50%;"> <!-- about me */ -->
+      <div class="card mx-auto mt-5 mb-5" style="width: 80%;"> <!-- about me */ -->
 
-        <div class="card-body">
+        <div class="card-body shadow-lg">
 
           <h5 class="card-title">🛠️ | Roblox Studio</h5>
           <hr>
@@ -70,7 +74,10 @@
           <a href="/roblox" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-    
+      <div style="height: 1px;"></div>
+
+      </div>
+
       <div class="w-100" style="z-index: 2;">
         <h1 class="display-5 mx-auto text-center" style="position: absolute; width: 100%;">Introduction</h1>
         <div class="d-flex justify-content-center">
@@ -80,32 +87,43 @@
 
       <hr style="width: 30%; border-top: 3px solid #07213d;" class="mx-auto my-4">
 
-      
-      <div class="w-75 mx-auto mt-4" style="padding: 50px; background-color: white; display: block; border-radius: 5px; height: auto; font-family: sans-serif;">
+
+      <div class="w-75 mx-auto mt-4"
+        style="padding: 50px; background-color: white; display: block; border-radius: 5px; height: auto; font-family: sans-serif;">
         <h5>About me</h5>
         <p class="text-dark">
-            I'm a passionate and driven person with a very collected mindset. I have a strong foundation computer science, software engineering, and game development; I'm eager to apply myself to a role that not only helps me understand these concepts more, but also helps me use the skills i've learned along the way.
+          I'm a passionate and driven person with a very collected mindset. I have a strong foundation computer science,
+          software engineering, and game development; I'm eager to apply myself to a role that not only helps me
+          understand these concepts more, but also helps me use the skills i've learned along the way.
         </p>
         <h5>How I gain experience</h5>
         <p class="text-dark">
-             My experience comes from scripting complex systems to building projects in C, C++, Python, Java, and JS. I also have a hobby myself with Roblox Studio.
+          My experience comes from scripting complex systems to building projects in C, C++, Python, Java, and JS. I
+          also have a hobby myself with Roblox Studio.
         </p>
         <h5>How I improve myself</h5>
         <p class="text-dark">
-             College aside, I also practice LeetCode problem solving and study lower languages such as x86 Assembly, alongside reverse engineering and build software projects like websites using JS, Flask, and HTML/CSS, I also make programs for simple math algorithms.
+          College aside, I also practice LeetCode problem solving and study lower languages such as x86 Assembly,
+          alongside reverse engineering and build software projects like websites using JS, Flask, and HTML/CSS, I also
+          make programs for simple math algorithms.
         </p>
         <h5>What makes me stand out?</h5>
         <p class="text-dark">
-             What sets me apart is my approach to learning, I can adapt and communicate efficiently with a team. For adaptation, using documentation is applicable for someone like me as I can rapidly develop skills in new tools quickly especially in a fast-paced work environment. I can do with optimizing algorithms for efficiency/collaborating with teammates on creative projects.
+          What sets me apart is my approach to learning, I can adapt and communicate efficiently with a team. For
+          adaptation, using documentation is applicable for someone like me as I can rapidly develop skills in new tools
+          quickly especially in a fast-paced work environment. I can do with optimizing algorithms for
+          efficiency/collaborating with teammates on creative projects.
         </p>
         <h5>My future careers</h5>
         <p class="text-dark">
-            I am looking for opportunities that can understand these values and show me the real challenges that are faced in the field of SWE, and that allow me to contribute to a forward-thinking engineering team where I can apply my skills, continue growing as a developer, and make a real impact.
+          I am looking for opportunities that can understand these values and show me the real challenges that are faced
+          in the field of SWE, and that allow me to contribute to a forward-thinking engineering team where I can apply
+          my skills, continue growing as a developer, and make a real impact.
         </p>
       </div>
-      
+
       <div style="display: block; height: 100px;"></div> <!-- filler -->
-    </main>
+  </main>
   <footer class="bg-dark text-light py-4">
     <div class="container text-center">
       <p class="mb-1">&copy; 2025 speed0fLight's Portfolio</p>
@@ -113,7 +131,8 @@
         Social Links:
       </div>
       <p class="mb-0">
-        <a href="https://www.linkedin.com/in/justin-negron-a7a8b61a2/" target="_blank" class="text-light me-3">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/justin-negron-a7a8b61a2/" target="_blank"
+          class="text-light me-3">LinkedIn</a>
         <a href="https://github.com/speed0fLight" target="_blank" class="text-light">Github</a>
       </p>
     </div>
