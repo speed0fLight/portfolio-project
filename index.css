@@ -67,3 +67,11 @@ header {
         opacity: 1;
     }
 }
+
+#infoCard {
+    transition: transform .2s;
+}
+
+#infoCard:hover {
+    transform: scale(1.1);
+}

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roblox Portfolio</title>
+  <link rel="stylesheet" href="roblox.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -13,7 +14,7 @@
   <link rel="icon" type="images/svg+xml" href="../images/favicon.svg">
 </head>
 
-<body class="bg-light">
+<body style="background-color: rgb(0, 72, 196);">
   <header class="header d-flex justify-content-between align-items-center bg-primary p-3">
     <!-- LEFT SIDE -->
     <div class="d-flex flex-column justify-content-between text-white">
@@ -42,58 +43,11 @@
 
 
 
-    <style>
-      #titleBlocker {
-        display: block;
-        width: 50%;
-        height: 50px;
-        background-color: white;
-        position: absolute;
-        top: 0px;
-        /* start at top of parent */
-        left: 0px;
-        z-index: 5;
-
-        animation: titleUnblock 2s ease-out forwards;
-      }
-
-      @keyframes titleUnblock {
-        from {
-          transform: translateY(0px);
-        }
-
-        to {
-          transform: translateY(-100px);
-        }
-      }
-    </style>
-
-    <style>
-      main {
-        background-color: rgb(0, 72, 196);
-      }
-
-      #subheader {
-        opacity: 0;
-        animation: fadeOut 2s ease-in;
-        animation-fill-mode: forwards;
-        animation-delay: 2s;
-      }
-
-      @keyframes fadeOut {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-
   </header>
 
+  <!-- Beginning of the information -->
   <main class="p-5">
+
     <div class="container py-1"></div>
     <div class="alert alert-danger w-50 text-center mx-auto" role="alert">Commisions closed.</div>
 

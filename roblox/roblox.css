@@ -1,0 +1,61 @@
+/* roblox page css */
+
+main {
+    background-color: rgb(0, 72, 196);
+    animation: fadeinUpwards 3s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeinUpwards {
+    from {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#subheader {
+    opacity: 0;
+    animation: fadeIn 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#titleBlocker {
+    display: block;
+    width: 50%;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    /* start at top of parent */
+    left: 0px;
+    z-index: 5;
+
+    animation: titleUnblock 2s ease-out forwards;
+}
+
+@keyframes titleUnblock {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
