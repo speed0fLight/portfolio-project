@@ -39,3 +39,13 @@
             opacity: 1;
         }
     }
+
+#projectSegment {
+    padding: 10%;
+}
+
+@media (max-width: 768px) {
+    #projectSegment {
+        padding: 0px;
+    }
+}
