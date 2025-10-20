@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placeholder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="template.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="images/svg+xml" href="images/favicon.svg">
+
 </head>
-<body>
-    Test
-</body>
-</html>
+
+<body style="background-color: rgb(67, 127, 247);">
+  <header class="header d-flex justify-content-between align-items-center bg-primary p-3">
+    <!-- LEFT SIDE -->
+    <div class="d-flex flex-column justify-content-between text-white">
+      <div id="titleAnimationBlock">
+        <h1 class="h1">Portfolio</h1>
+        <div class="bg-primary" id="titleBlocker"></div>
+      </div>
+      <div id="subheader">
+        <h2 class="h2 mb-0" style="color: black;">Reverse Engineering Edition</h2>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle text-light" type="button" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Quick Links</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="../software">Software Engineer/Related</a>
+          <a class="dropdown-item" href="../roblox">Roblox Studio</a>
+          <a class="dropdown-item disabled" href="/reversing">Reverse Engineering</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="mt-5 w-50 mx-auto p-1" style="background-color: rgba(255, 255, 255, 0.167); border-radius: 10px;">
+    <h1 class="text text-center">Break it up</h1>
+    <p>When you face a problem that you cannot understand, you have to dive down into it's roots. If a car engine has a problem, you must isolate that part, if that part has different pieces, then you isolate those different pieces. Work your way down until you find out what you want to change, and learn from it.</p>
+    <p>Not everything is always laid out in front of you. You can you can only understand as much as you've done. The kicker of all problems stem from experience with them. With the right experience that you are guaranteed to excel in what you do.</p>
+
+    <h1 class="text text-center">Map it out</h1>
+    <p>Everyone has their own process for problem solving. Some like to draw visual maps out for themselves, others like to draw simple step by step instructions. In this type of subject, every problem is tackled from every angle, because only one is certainly not enough.</p>
+    <p>Understanding how a machine works is as fundamental as understanding how each of it's parts plays a role in it. For software, it's no different. All there is to do is find your approach and continue on from there.</p>
+    </div>
+
+    <div>
+
+    </div>
+</main>
+
+
+  </body>
+  
+  </html>

@@ -1,0 +1,51 @@
+#titleBlocker {
+    display: block;
+    width: 70%;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    /* start at top of parent */
+    left: 0px;
+    z-index: 5;
+
+    animation: titleUnblock 2s ease-out forwards;
+}
+
+@keyframes titleUnblock {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+#subheader {
+    opacity: 0;
+    animation: fadeOut 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes fadeOut {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+#projectSegment {
+    padding: 10%;
+}
+
+@media (max-width: 768px) {
+    #projectSegment {
+        padding: 0px;
+    }
+}
