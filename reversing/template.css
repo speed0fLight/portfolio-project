@@ -40,12 +40,22 @@
         }
     }
 
-#projectSegment {
-    padding: 10%;
+#Intro {
+    width: 80%;
+}
+
+#Project1 {
+    background-color: rgba(2, 255, 86, 0.166);
+    border-radius: 10px;
+    width: 90%;
+    padding: 5%;
 }
 
 @media (max-width: 768px) {
-    #projectSegment {
-        padding: 0px;
+    #Project1 {
+        width: 80%;
+    }
+    #Intro {
+        width: 100%;
     }
 }
