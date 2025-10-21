@@ -36,10 +36,10 @@
                 <button class="btn btn-info dropdown-toggle text-light" type="button" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Quick Links</button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="../index.html">Home</a>
                     <a class="dropdown-item" href="../software">Software Engineer/Related</a>
-                    <a class="dropdown-item" href="../roblox">Roblox Studio</a>
                     <a class="dropdown-item disabled" href="/reversing">Reverse Engineering</a>
+                    <a class="dropdown-item" href="../roblox">Roblox Studio</a>
                 </div>
             </div>
         </div>
@@ -50,8 +50,8 @@
         <!-- //////////// -->
         <!-- Introduction -->
         <!-- //////////// -->
-        <div class="mt-5 mx-auto p-1" id="Intro" style="background-color: rgba(255, 255, 255, 0.167); border-radius: 10px;">
-            <h1 class="text text-center">Break it up</h1>
+        <div class="mt-5 mx-auto p-1" id="Intro" style="background-color: rgba(255, 255, 255, 0.167);">
+            <h1 class="text text-center">Introduction</h1>
             <p>When you face a problem that you cannot understand, you have to dive down into it's roots. If a car
                 engine has a problem, you must isolate that part, if that part has different pieces, then you isolate
                 those different pieces. Work your way down until you find out what you want to change, and learn from
@@ -73,18 +73,59 @@
         <!-- LCD 1602 -->
         <!-- //////// -->
         <div class="mx-auto mt-5" id="Project1">
-        <h1 class="text text-center">Reverse Engineering the LCD1602 Component</h1>
-        <p>This project involves both advanced hardware and programming skills. I reverse engineered a ASCII
-            (Character only) Display and caused it to output individual pixels, allowing graphical programs to run
-            on it. I forked the library on github, and made my own which allowed low level control of pixel and LCD
-            control. I learned about working with source code and creating libraries for the Arduino.</p>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item rounded-top" style="font-weight: bold;">Topics learned in this project:</li>
-            <li class="list-group-item">Embedded Systems</li>
-            <li class="list-group-item">Low level programming</li>
-            <li class="list-group-item rounded-bottom">Problem Solving</li>
-        </ul>
+            <h1 class="text text-center">Reverse Engineering the LCD1602 Component</h1>
+            <hr class="mx-auto w-50">
+            <h5 class="text text-center">Before</h5>
+            <div class="image-container">
+                <img class="d-block mx-auto rounded-top" id="mobileImage" src="ProjectImages/LCD_1.jpeg"
+                    alt="Responsive image">
+            </div>
+            <div id="mobileImageSubtext" class="rounded-bottom p-1 mb-5 mx-auto"
+                style="background-color: rgba(240, 248, 255, 0.229);">
+                <h5>What the original screen looks like</h5>
+                <p>Default usage of the LCD 1602, before any reversing took place. Just letters and emoticons</p>
+            </div>
+
+            <h5 class="text text-center">After</h5>
+            <div class="image-container">
+                <img id="mobileImage" class="rounded-top d-block mx-auto" src="ProjectImages/LCD_2.png"
+                    alt="Responsive image">
+            </div>
+            <div id="mobileImageSubtext" class="rounded-bottom p-1 mb-5 mx-auto"
+                style="background-color: rgba(240, 248, 255, 0.229);">
+                <h5>Outputting individual pixels</h5>
+                <p>Shows pixels being manipulated on this screen. Note that this is not possible in the normal library.
+                </p>
+            </div>
+
+            <div class="p-1 rounded" style="background-color: rgba(255, 255, 255, 0.236);">
+                <h5 class="text text-center">Details</h5>
+                <h6>Date started: 10/10/2025</h6>
+                <h6>Finished: 10/14/2025</h6>
+                <ol>
+                    <li>This project involves both advanced hardware and programming skills. I reverse engineered a
+                        ASCII
+                        (Character only) Display and caused it to output individual pixels, allowing graphical programs
+                        to run
+                        on it.</li>
+                    <li>I forked the library on github, and made my own which allowed low level control of pixel and LCD
+                        control. </li>
+                    <li>I learned about working with source code and creating libraries for the Arduino.</li>
+                </ol>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item rounded-top" style="font-weight: bold;">Topics learned in this project:
+                    </li>
+                    <li class="list-group-item">Embedded Systems</li>
+                    <li class="list-group-item">Low level programming</li>
+                    <li class="list-group-item rounded-bottom">Problem Solving</li>
+                </ul>
+            </div>
+
         </div>
+        <!-- /////////////// -->
+        <!-- END OF PROJECTS -->
+        <!-- /////////////// -->
+         <p class="mt-5 alert alert-primary w-50 mx-auto">More projects will be added soon! 10/21/2025</p>
     </main>
 
     <footer class="mt-5 bg-dark text-light py-4">
