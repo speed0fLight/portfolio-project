@@ -68,10 +68,35 @@ header {
     }
 }
 
-#infoCard {
+.infoCard {
     transition: transform .2s;
 }
 
-#infoCard:hover {
+.infoCard:hover {
     transform: scale(1.1);
+}
+
+.infoCard2 {
+    transition: transform .2s;
+}
+
+.infoCard2:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.infoCard2 .card-header {
+  color: rgba(0, 0, 0, 0.375);
+  font-weight: bold;
+  transition: color .2s; /* Optional: makes the color change smooth */
+}
+.infoCard2 .card-text {
+  color: rgba(0, 0, 0, 0.392);
+  font-weight: 400;
+  transition: color .2s; /* Optional: makes the color change smooth */
+}
+
+.infoCard2:hover .card-header,
+.infoCard2:hover .card-text {
+  color: white;
 }
