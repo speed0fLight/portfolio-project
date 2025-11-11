@@ -1,0 +1,5 @@
+# robots.txt file
+User-agent: *
+Allow: /
+
+Sitemap: https://speed0flight.com/sitemap.xml
