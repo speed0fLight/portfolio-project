@@ -1,11 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justin Negron | Portfolio</title>
+  <meta name="description" content="Justin Negron: Computer Science student, NASA CTSGC Lead Engineer, and CompTIA Network+ certified. Projects in embedded systems, networking, and software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand">Justin Negron</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- INTRO -->
+    <section class="intro" id="top">
+      <div class="container intro-grid">
+        <div>
+          <h1>Justin Negron</h1>
+          <p class="headline">Computer Science student · Lead Engineer, NASA CT Space Grant project · CompTIA Network+</p>
+          <p class="sub">Building at the intersection of hardware, security, and embedded systems. Waterbury, Connecticut.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#featured">See my featured project</a>
+            <a class="btn btn-outline" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <!-- PLACEHOLDER: add your headshot at assets/images/profile.jpg (square works best) -->
+        <div class="headshot">
+          <img src="assets/images/profile.jpg" alt="Portrait of Justin Negron" onerror="this.remove()">
+          <span>Add photo<small>assets/images/profile.jpg</small></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section featured" id="featured">
+      <div class="container">
+        <p class="kicker">Featured project</p>
+        <h2>Reverse Engineering the Mars Rover</h2>
+        <p class="meta">Integrated Mechatronics and Additive Manufacturing · Jun 2026 – Present · NASA CTSGC · CT State Naugatuck Valley</p>
+
+        <!--
+          Drop your photos in assets/images/mars-rover/ using these filenames (or edit the src / caption below).
+          Any 2:1 image works best, e.g. 1600 x 800.
+        -->
+        <div class="carousel" id="rover-carousel" role="region" aria-roledescription="carousel" aria-label="Mars Rover project photos" tabindex="0">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <figure class="slide" data-caption="Project poster presented at the 2026 S-STEM Scholars &amp; PI Meeting. [Edit caption]">
+                <div class="ph">Photo placeholder<small>assets/images/mars-rover/01-poster.jpg</small></div>
+                <img src="assets/images/mars-rover/01-poster.jpg" alt="Mars Rover project poster" onerror="this.remove()">
+              </figure>
+              <figure class="slide" data-caption="Rocker-bogie suspension design in Onshape. [Edit caption]">
+                <div class="ph">Photo placeholder<small>assets/images/mars-rover/02-rocker-bogie.jpg</small></div>
+                <img src="assets/images/mars-rover/02-rocker-bogie.jpg" alt="Rocker-bogie suspension CAD model" onerror="this.remove()">
+              </figure>
+              <figure class="slide" data-caption="Three-bevel-gear differential assembly. [Edit caption]">
+                <div class="ph">Photo placeholder<small>assets/images/mars-rover/03-differential.jpg</small></div>
+                <img src="assets/images/mars-rover/03-differential.jpg" alt="Three-bevel-gear differential assembly" onerror="this.remove()">
+              </figure>
+              <figure class="slide" data-caption="Power electronics: LiPo battery to Raspberry Pi 5 and servo control. [Edit caption]">
+                <div class="ph">Photo placeholder<small>assets/images/mars-rover/04-electronics.jpg</small></div>
+                <img src="assets/images/mars-rover/04-electronics.jpg" alt="Rover power electronics and wiring" onerror="this.remove()">
+              </figure>
+              <figure class="slide" data-caption="3D-printed rover prototype. [Edit caption]">
+                <div class="ph">Photo placeholder<small>assets/images/mars-rover/05-prototype.jpg</small></div>
+                <img src="assets/images/mars-rover/05-prototype.jpg" alt="3D-printed rover prototype" onerror="this.remove()">
+              </figure>
+            </div>
+          </div>
+          <button class="carousel-btn prev" type="button" aria-label="Previous photo">&#8249;</button>
+          <button class="carousel-btn next" type="button" aria-label="Next photo">&#8250;</button>
+        </div>
+        <div class="carousel-footer">
+          <p class="carousel-caption" aria-live="polite"></p>
+          <div class="carousel-controls">
+            <span class="carousel-count"></span>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+
+        <div class="featured-body">
+          <div>
+            <p>This is a NASA CTSGC Student Project funded by NASA through the CT Space Consortium. As Lead Engineer, I'm reverse engineering a Mars rover through integrated mechatronics and additive manufacturing.</p>
+            <ul class="bullets">
+              <li>Designing a rocker-bogie suspension system and a three-bevel-gear differential assembly in Onshape.</li>
+              <li>Architecting the power electronics from LiPo battery to Raspberry Pi 5 and servo control.</li>
+              <li>Building on an earlier NASA rover prototype project (Jul 2025 – Jun 2026).</li>
+            </ul>
+            <p class="todo">[Add your additional text]</p>
+          </div>
+          <aside class="detail-card">
+            <dl>
+              <dt>Role</dt><dd>Lead Engineer</dd>
+              <dt>Program</dt><dd>NASA Connecticut Space Grant Consortium (CTSGC)</dd>
+              <dt>Skills</dt>
+              <dd><ul class="tags"><li>Systems Engineering</li><li>CAD (Onshape)</li><li>3D Printing</li><li>Raspberry Pi 5</li><li>Power electronics</li></ul></dd>
+            </dl>
+            <!-- TODO: link the poster PDF or a write-up here when you have one -->
+            <a class="text-link" href="#" aria-disabled="true">View poster / write-up &rarr;</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section alt" id="about">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div>
+            <p>I'm a Computer Science student at Naugatuck Valley Community College, transferring to Central Connecticut State University for a B.S. in Computer Science with a Cybersecurity concentration, with my sights set on the Accelerate Central BS+MS program.</p>
+            <p>My technical foundation spans Python, JavaScript, SQL, and Docker, with hands-on embedded systems work on ESP32 and Raspberry Pi platforms, and reverse engineering using Ghidra. I hold CompTIA Network+ (Security+ in progress) and have hands-on networking experience with VLANs, DHCP, and routing.</p>
+            <p>Alongside coursework, I work as a Computer Lab Assistant, help students with STEM subjects, and serve as a Lead Engineer on NVCC's NASA-affiliated Quadcopter Program. I previously led programming for my high school's robotics team and wrote extensive long-term documentation for it.</p>
+            <p>I'm building toward a career in cyber-physical systems and defense/security engineering, with the long-term goal of founding my own security consulting practice.</p>
+          </div>
+          <dl class="facts">
+            <dt>Location</dt><dd>Waterbury, Connecticut</dd>
+            <dt>Studying</dt><dd>A.S. Computer Science, CT State Naugatuck Valley</dd>
+            <dt>Next</dt><dd>B.S. Computer Science (Cybersecurity), CCSU</dd>
+            <dt>Languages</dt><dd>English, Spanish (native or bilingual), German (elementary)</dd>
+            <dt>Interests</dt><dd>Embedded systems, security, networking, robotics</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>More projects</h2>
+        <div class="projects-grid">
+
+          <article class="project">
+            <div class="thumb">
+              <span>Photo placeholder<small>assets/images/projects/homelab.jpg</small></span>
+              <img src="assets/images/projects/homelab.jpg" alt="Networking homelab rack" onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>Networking Homelab</h3>
+              <p class="date">Jan 2026 – Present · CT State Naugatuck Valley</p>
+              <p>This project began as a small computer on a Raspberry Pi and slowly evolved into a sophisticated setup with enterprise… <span class="todo">[Add your additional text]</span></p>
+              <ul class="tags"><li>Wireless Networking</li><li>Network Engineering</li></ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb">
+              <span>Photo placeholder<small>assets/images/projects/rover-prototype.jpg</small></span>
+              <img src="assets/images/projects/rover-prototype.jpg" alt="NASA rover prototype" onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>NASA Rover Prototype Project</h3>
+              <p class="date">Jul 2025 – Jun 2026 · CT State Naugatuck Valley</p>
+              <p>Built a rover using a differential, 3D printing, and more. Used to simulate a rocker-bogie differential and its components. <span class="todo">[Add your additional text]</span></p>
+              <ul class="tags"><li>Project Management</li><li>3D Printing</li></ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb">
+              <span>Photo placeholder<small>assets/images/projects/lcd1602.jpg</small></span>
+              <img src="assets/images/projects/lcd1602.jpg" alt="LCD1602 display wired to a breadboard" onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>Reverse Engineering the LCD1602</h3>
+              <p class="date">Oct 2025 · CT State Naugatuck Valley</p>
+              <p>Reverse engineered an ASCII (character-only) display so it could draw individual pixels. I forked an open-source Arduino library and added low-level pixel and LCD control.</p>
+              <ul class="tags"><li>Embedded Systems</li><li>Programming</li></ul>
+              <div class="links"><a href="https://speed0flight.com/reversing" target="_blank" rel="noopener">Write-up &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb">
+              <span>Screenshot placeholder<small>assets/images/projects/robotics2025.jpg</small></span>
+              <img src="assets/images/projects/robotics2025.jpg" alt="FIRST Robotics 2025 robot" onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>FIRST Robotics 2025 Robot Project</h3>
+              <p class="date">Nov 2024 – Jun 2025</p>
+              <p>A program designed to be packaged to a robot that allows movement in all vectors via a controller. It also allows… <span class="todo">[Add your additional text]</span></p>
+              <ul class="tags"><li>Programming</li><li>Robotics</li></ul>
+              <div class="links"><a href="https://github.com/speed0fLight/robotics2025" target="_blank" rel="noopener">Source on GitHub &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb">
+              <span>Screenshot placeholder<small>assets/images/projects/todo-app.jpg</small></span>
+              <img src="assets/images/projects/todo-app.jpg" alt="Todo-list web app" onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>Todo-list Web App</h3>
+              <p class="date">Web project</p>
+              <p>Flask and Bootstrap site with user accounts stored in a SQL database. Notes are saved through POST requests from JavaScript.</p>
+              <ul class="tags"><li>Flask</li><li>Python</li><li>JavaScript</li><li>SQL</li></ul>
+              <div class="links"><a href="https://github.com/speed0fLight/portfolioProjects/tree/main/FinalProject" target="_blank" rel="noopener">Source on GitHub &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb">
+              <span>Screenshot placeholder<small>assets/images/projects/stock-manager.jpg</small></span>
+              <img src="assets/images/projects/stock-manager.jpg" alt="Stock portfolio manager app" onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>Stock Portfolio Manager</h3>
+              <p class="date">Web project</p>
+              <p>Flask app that pulls live stock prices from an API and supports buying and selling, account creation, and a transaction log, backed by SQL.</p>
+              <ul class="tags"><li>Flask</li><li>Python</li><li>SQL</li><li>REST API</li></ul>
+              <div class="links"><a href="https://github.com/code50/114781935/tree/main/week9/finance" target="_blank" rel="noopener">Source on GitHub &rarr;</a></div>
+            </div>
+          </article>
+
+        </div>
+        <p class="more">More programming projects live on my <a href="https://speed0flight.com" target="_blank" rel="noopener">programming portfolio</a>.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Software</h3>
+            <ul class="tags"><li>Python</li><li>JavaScript</li><li>SQL</li><li>Docker</li><li>Java</li><li>C / C++</li><li>HTML &amp; CSS</li><li>Flask</li><li>Git</li></ul>
+          </div>
+          <div>
+            <h3>Embedded &amp; hardware</h3>
+            <ul class="tags"><li>ESP32</li><li>Raspberry Pi</li><li>Arduino</li><li>Onshape CAD</li><li>3D printing</li><li>Breadboarding</li><li>Soldering</li></ul>
+          </div>
+          <div>
+            <h3>Networking &amp; security</h3>
+            <ul class="tags"><li>CompTIA Network+</li><li>VLANs</li><li>DHCP</li><li>Routing</li><li>Ghidra</li><li>Reverse engineering</li><li>x86 Assembly</li></ul>
+          </div>
+          <div>
+            <h3>Professional</h3>
+            <ul class="tags"><li>Teamwork</li><li>Project management</li><li>Tutoring</li><li>Technical documentation</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li>
+            <p class="when">Sep 2026 – Present</p>
+            <h3>Computer Lab Assistant</h3>
+            <p class="org">CT State Naugatuck Valley · Waterbury, CT</p>
+            <ul class="bullets">
+              <li>Help students with computer issues and server connectivity.</li>
+              <li>Assist with server maintenance.</li>
+              <li>Tutor students in Microsoft Word and Excel.</li>
+              <li>Help engineering students build projects and learn skills with breadboards, CAD, and microcontrollers.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">Jun 2026 – Present</p>
+            <h3>Lead Engineer, NASA CTSGC Student Project</h3>
+            <p class="org">CT State Naugatuck Valley</p>
+            <ul class="bullets">
+              <li>Leading the Mars rover reverse engineering project (see featured project above).</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">[Start] – Present</p>
+            <h3>Lead Engineer, NASA-affiliated Quadcopter Program</h3>
+            <p class="org">CT State Naugatuck Valley</p>
+            <ul class="bullets">
+              <li class="todo">[Add your additional text]</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">Oct 2025 – May 2026</p>
+            <h3>NViSION Student Worker</h3>
+            <p class="org">CT State Naugatuck Valley</p>
+            <ul class="bullets">
+              <li>Troubleshot technical issues with laptop hardware and network connectivity.</li>
+              <li>Provided direct tutoring in STEM subjects.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">Jun 2022 – Jul 2022</p>
+            <h3>Summer Camp Staff</h3>
+            <p class="org">NRZ Association</p>
+            <ul class="bullets">
+              <li>Assisted with event programming.</li>
+              <li>Facilitated activities with summer camp members, following a schedule.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt" id="education">
+      <div class="container">
+        <h2>Education &amp; certifications</h2>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <h3>A.S. Computer Science</h3>
+            <p class="org">CT State Naugatuck Valley · Aug 2025 – Jun 2027</p>
+            <p>Transferring to Central Connecticut State University for a B.S. in Computer Science (Cybersecurity concentration).</p>
+            <ul class="bullets">
+              <li>NASA Quadcopter Program</li>
+              <li>NASA Makers Space</li>
+              <li>NViSION Scholars</li>
+              <li>STEM Club</li>
+            </ul>
+          </article>
+          <article class="edu-card">
+            <h3>CompTIA Network+</h3>
+            <p class="org">CompTIA · Issued Mar 2026, expires Mar 2029</p>
+            <p>Security+ in progress.</p>
+          </article>
+          <article class="edu-card">
+            <h3>Scholar &amp; awardee</h3>
+            <p class="org">CT State Naugatuck Valley</p>
+            <p>S-STEM &amp; NViSION Scholar. CT NASA Space Consortium Student Project Awardee.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container narrow">
+        <h2>Get in touch</h2>
+        <p>I'm always glad to connect with people working in hardware, security, and embedded systems. The best way to reach me is email.</p>
+        <p><a class="btn btn-primary" href="mailto:justinarmani19@gmail.com">justinarmani19@gmail.com</a></p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/justin-negron-a7a8b61a2/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/speed0fLight" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://speed0flight.com" target="_blank" rel="noopener">Programming portfolio</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Justin Negron</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
