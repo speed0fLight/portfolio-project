@@ -124,7 +124,7 @@ dl, dd { margin: 0; }
 .ph {
   position: absolute; inset: 0; display: grid; place-content: center; text-align: center;
   color: var(--muted); font-size: .95rem;
-  background: repeating-linear-gradient(45deg, #eceff4, #eceff4 14px, #f4f6f9 14px, #f4f6f9 28px);
+  /* background: repeating-linear-gradient(45deg, #eceff4, #eceff4 14px, #f4f6f9 14px, #f4f6f9 28px); */
 }
 .ph small { display: block; font-size: .75rem; opacity: .8; }
 
