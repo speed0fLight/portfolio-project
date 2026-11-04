@@ -120,7 +120,7 @@ dl, dd { margin: 0; }
 .carousel-viewport { overflow: hidden; }
 .carousel-track { display: flex; transition: transform .45s ease; }
 .slide { position: relative; flex: 0 0 100%; margin: 0; aspect-ratio: 2 / 1; background: #eceff4; }
-.slide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.slide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .ph {
   position: absolute; inset: 0; display: grid; place-content: center; text-align: center;
   color: var(--muted); font-size: .95rem;
@@ -167,7 +167,7 @@ a[aria-disabled="true"] { opacity: .45; pointer-events: none; }
 
 /* Lists, tags */
 .bullets { list-style: disc; padding-left: 1.2rem; }
-.bullets li { margin-bottom: .4rem; }
+.bullets li { margin-bottom: .4rem; list-style: none; }
 .tags { display: flex; flex-wrap: wrap; gap: .4rem; }
 .tags li {
   font-size: .8rem; padding: .15rem .6rem; border-radius: 4px;
