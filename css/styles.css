@@ -167,7 +167,9 @@ a[aria-disabled="true"] { opacity: .45; pointer-events: none; }
 
 /* Lists, tags */
 .bullets { list-style: disc; padding-left: 1.2rem; }
-.bullets li { margin-bottom: .4rem; list-style: none; }
+.bullets li { margin-bottom: .4rem; }
+.soft-bullets { list-style: disc; padding-left: 1.2rem; }
+.soft-bullets li { margin-bottom: .4rem; list-style: none; }
 .tags { display: flex; flex-wrap: wrap; gap: .4rem; }
 .tags li {
   font-size: .8rem; padding: .15rem .6rem; border-radius: 4px;
