@@ -1,9 +1,3 @@
-HOME PAGE
-About Me
-Cybersecurity
-Software Development
-Hobbies
-RE, Piano, Game Development
+Create a video for the featured project. Begin with the nasa space consortium.
 
-CYBERSECURITY
-Homelab progression
+Make a shadow of the perseverance rover on the bottom of the information title card.

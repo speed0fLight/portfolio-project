@@ -39,7 +39,7 @@
         <div>
           <h1>Justin Negron</h1>
           <p class="headline">Computer Science student · Lead Engineer, NASA CT Space Grant project · CompTIA Network+</p>
-          <p class="sub">Building at the intersection of hardware, security, and embedded systems. Waterbury, Connecticut.</p>
+          <p class="sub">Building and learning with hardware, security, and embedded systems. Waterbury, Connecticut.</p>
           <div class="actions">
             <a class="btn btn-primary" href="#featured">See my featured project</a>
             <a class="btn btn-outline" href="#contact">Contact me</a>
@@ -104,8 +104,11 @@
               <li>Architecting the power electronics from LiPo battery to Raspberry Pi 5 and servo control.</li>
               <li>Building on an earlier NASA rover prototype project (Jul 2025 – Jun 2026).</li>
               <li>Mini solar panels that harvest energy to power non-essential systems (headlights, etc.)</li>
+              <li>Use of both teleoperative (human piloted) and autonomous systems.</li>
+              <li>Folding FPV Camera for viewing location without obstructing the LiDAR system.</li>
+              <li>Robotic claw for sample collection.</li>
+              <li>LiDAR System used for 3D-Mapping and autonomous movement.</li>
             </ul>
-            <p class="todo">[Add your additional text]</p>
           </div>
           <aside class="detail-card">
             <dl>
@@ -114,8 +117,8 @@
               <dt>Skills</dt>
               <dd><ul class="tags"><li>Systems Engineering</li><li>CAD (Onshape)</li><li>3D Printing</li><li>Raspberry Pi 5</li><li>Power electronics</li></ul></dd>
             </dl>
-            <!-- TODO: link the poster PDF or a write-up here when you have one -->
-            <a class="text-link" href="#" aria-disabled="true">View poster / write-up &rarr;</a>
+            <!-- Opens the write-up popup (js/main.js). Without JS it falls back to the plain text file. -->
+            <a class="text-link" href="writeup.txt" data-writeup-open>View write up &rarr;</a>
           </aside>
         </div>
       </div>
@@ -150,54 +153,65 @@
         <div class="projects-grid">
 
           <article class="project">
-            <div class="thumb">
-              <span>Photo placeholder<small>assets/images/projects/homelab.jpg</small></span>
-              <img src="assets/images/projects/homelab.jpg" alt="Networking homelab rack" onerror="this.remove()">
+            <div class="thumb mini-carousel" role="region" aria-roledescription="carousel" aria-label="Networking Homelab photos" tabindex="0">
+              <div class="mini-track">
+                <figure class="mini-slide"><img src="assets/images/projects/Homelab_1.jpeg" alt="Open-frame server rack on wheels holding a mini PC, a TP-Link managed switch and network cabling, with a monitor and keyboard on top" loading="lazy"></figure>
+                <figure class="mini-slide"><img src="assets/images/projects/Homelab_2.jpeg" alt="Back of the homelab rack showing power cabling and a rack-mounted power distribution unit" loading="lazy"></figure>
+              </div>
             </div>
             <div class="project-body">
               <h3>Networking Homelab</h3>
               <p class="date">Jan 2026 – Present · CT State Naugatuck Valley</p>
-              <p>This project began as a small computer on a Raspberry Pi and slowly evolved into a sophisticated setup with enterprise… <span class="todo">[Add your additional text]</span></p>
+              <p>This project began as a small computer on a raspberry pi, and slowly evolved into a sophisticated setup with enterprise architecture in mind.
+                 The lab runs on proxmox, a hypervisor for running virtual machines and containers to create services!
+                 The hardware involved is a managed switch (VLANs), a router, a dell optiplex 7050, a pdu and a server rack. Uses VMs as a jumpbox for ease of configuration. Remotely accessed using tailscale.
+                 Hosts media for streaming, much like Netflix.
+              </p>
               <ul class="tags"><li>Wireless Networking</li><li>Network Engineering</li></ul>
             </div>
           </article>
 
           <article class="project">
-            <div class="thumb">
-              <span>Photo placeholder<small>assets/images/projects/rover-prototype.jpg</small></span>
-              <img src="assets/images/projects/rover-prototype.jpg" alt="NASA rover prototype" onerror="this.remove()">
+            <div class="thumb mini-carousel" role="region" aria-roledescription="carousel" aria-label="NASA Rover Prototype photos" tabindex="0">
+              <div class="mini-track">
+                <figure class="mini-slide"><img src="assets/images/projects/RoverPrototypeProject_1.jpeg" alt="Hand holding a 3D-printed camera housing above the rover prototype's chassis and differential gear assembly" loading="lazy"></figure>
+                <figure class="mini-slide"><img src="assets/images/projects/RoverPrototypeProject_2.jpeg" alt="Rover prototype parts laid out on a table: white 3D-printed chassis with differential, gold rocker arms, servos and a gear motor" loading="lazy"></figure>
+                <figure class="mini-slide"><img src="assets/images/projects/RoverPrototypeProject_3.jpeg" alt="Assembled 3D-printed rover prototype on a table with black spoked wheels, gold rocker-bogie arms and a black robotic arm" loading="lazy"></figure>
+              </div>
             </div>
             <div class="project-body">
               <h3>NASA Rover Prototype Project</h3>
               <p class="date">Jul 2025 – Jun 2026 · CT State Naugatuck Valley</p>
-              <p>Built a rover using a differential, 3D printing, and more. Used to simulate a rocker-bogie differential and its components. <span class="todo">[Add your additional text]</span></p>
+              <p>Built a rover using a differential, 3D printing, and more. Used to simulate a rocker-bogie differential and its components. This was created at the 2025 NASA Makerspace Program at Naugatuck Valley Community College.</p>
               <ul class="tags"><li>Project Management</li><li>3D Printing</li></ul>
             </div>
           </article>
 
           <article class="project">
-            <div class="thumb">
-              <span>Photo placeholder<small>assets/images/projects/lcd1602.jpg</small></span>
-              <img src="assets/images/projects/lcd1602.jpg" alt="LCD1602 display wired to a breadboard" onerror="this.remove()">
+            <div class="thumb mini-carousel" role="region" aria-roledescription="carousel" aria-label="LCD1602 project photos" tabindex="0">
+              <div class="mini-track">
+                <figure class="mini-slide"><img src="assets/images/projects/LCD1602ReverseEngineered_1.jpeg" alt="LCD1602 display on a breadboard wired to an Arduino, showing &quot;I ♥ Arduino!&quot; with a heart and a smiley face drawn pixel by pixel" loading="lazy"></figure>
+                <figure class="mini-slide"><img src="assets/images/projects/LCD1602ReverseEngineered_2.jpeg" alt="LCD1602 display wired to an Arduino on a breadboard with a single column of pixels lit on the screen" loading="lazy"></figure>
+              </div>
             </div>
             <div class="project-body">
               <h3>Reverse Engineering the LCD1602</h3>
               <p class="date">Oct 2025 · CT State Naugatuck Valley</p>
               <p>Reverse engineered an ASCII (character-only) display so it could draw individual pixels. I forked an open-source Arduino library and added low-level pixel and LCD control.</p>
               <ul class="tags"><li>Embedded Systems</li><li>Programming</li></ul>
-              <div class="links"><a href="https://speed0flight.com/reversing" target="_blank" rel="noopener">Write-up &rarr;</a></div>
             </div>
           </article>
 
           <article class="project">
-            <div class="thumb">
-              <span>Screenshot placeholder<small>assets/images/projects/robotics2025.jpg</small></span>
-              <img src="assets/images/projects/robotics2025.jpg" alt="FIRST Robotics 2025 robot" onerror="this.remove()">
+            <div class="thumb mini-carousel" role="region" aria-roledescription="carousel" aria-label="FIRST Robotics 2025 project image" tabindex="0">
+              <div class="mini-track">
+                <figure class="mini-slide"><img src="assets/images/projects/RoboticsCode2025.jpeg" alt="GitHub repository card for speed0fLight/robotics2025" loading="lazy"></figure>
+              </div>
             </div>
             <div class="project-body">
               <h3>FIRST Robotics 2025 Robot Project</h3>
               <p class="date">Nov 2024 – Jun 2025</p>
-              <p>A program designed to be packaged to a robot that allows movement in all vectors via a controller. It also allows… <span class="todo">[Add your additional text]</span></p>
+              <p>This is a program that is designed to be packaged to a robot which allows movement in all vectors via a controller. It also allows dispensing.</p>
               <ul class="tags"><li>Programming</li><li>Robotics</li></ul>
               <div class="links"><a href="https://github.com/speed0fLight/robotics2025" target="_blank" rel="noopener">Source on GitHub &rarr;</a></div>
             </div>
@@ -205,8 +219,7 @@
 
           <article class="project">
             <div class="thumb">
-              <span>Screenshot placeholder<small>assets/images/projects/todo-app.jpg</small></span>
-              <img src="assets/images/projects/todo-app.jpg" alt="Todo-list web app" onerror="this.remove()">
+              <iframe src="https://www.youtube.com/embed/hL007gbrJ7U?si=9bBIRqynwnH5PRo2" title="Todo-list web app demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="project-body">
               <h3>Todo-list Web App</h3>
@@ -219,15 +232,13 @@
 
           <article class="project">
             <div class="thumb">
-              <span>Screenshot placeholder<small>assets/images/projects/stock-manager.jpg</small></span>
-              <img src="assets/images/projects/stock-manager.jpg" alt="Stock portfolio manager app" onerror="this.remove()">
+              <iframe src="https://www.youtube.com/embed/UCv47j0JqaU?si=_NAmd98QhPLkCl4S" title="Stock Portfolio Manager demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="project-body">
               <h3>Stock Portfolio Manager</h3>
               <p class="date">Web project</p>
               <p>Flask app that pulls live stock prices from an API and supports buying and selling, account creation, and a transaction log, backed by SQL.</p>
               <ul class="tags"><li>Flask</li><li>Python</li><li>SQL</li><li>REST API</li></ul>
-              <div class="links"><a href="https://github.com/code50/114781935/tree/main/week9/finance" target="_blank" rel="noopener">Source on GitHub &rarr;</a></div>
             </div>
           </article>
 
@@ -290,7 +301,8 @@
             <h3>Lead Engineer, NASA-affiliated Quadcopter Program</h3>
             <p class="org">CT State Naugatuck Valley</p>
             <ul class="soft-bullets">
-              <li class="todo">[Add your additional text]</li>
+              <li>Developed a LiDAR System capable of reconstructing 2D point maps into a viewable 3D space.</li>
+              <li>Assisted in modeling a drone frame for flights and mounting components.</li>
             </ul>
           </li>
           <li>
@@ -350,11 +362,10 @@
       <div class="container narrow">
         <h2>Get in touch</h2>
         <p>I'm always glad to connect with people working in hardware, security, and embedded systems. The best way to reach me is email.</p>
-        <p><a class="btn btn-primary" href="mailto:justinarmani19@gmail.com">justinarmani19@gmail.com</a></p>
+        <p><a class="btn btn-primary" href="mailto:justinnegron14@gmail.com">justinnegron14@gmail.com</a></p>
         <ul class="socials">
           <li><a href="https://www.linkedin.com/in/justin-negron-a7a8b61a2/" target="_blank" rel="noopener">LinkedIn</a></li>
           <li><a href="https://github.com/speed0fLight" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://speed0flight.com" target="_blank" rel="noopener">Programming portfolio</a></li>
         </ul>
       </div>
     </section>
@@ -365,6 +376,29 @@
       <p>&copy; <span id="year">2026</span> Justin Negron</p>
     </div>
   </footer>
+
+  <!-- the text itself lives in writeup.txt and is loaded when the popup first opens -->
+  <div class="modal" id="writeup-modal" role="dialog" aria-modal="true" aria-labelledby="writeup-title">
+    <div class="modal-panel" tabindex="-1">
+      <button class="modal-close" type="button" aria-label="Close write-up">&times;</button>
+      <p class="kicker">Project write-up</p>
+      <h2 id="writeup-title">Reverse Engineering the Mars Rover</h2>
+      <div class="modal-text" id="writeup-text">
+        <p>Loading&hellip;</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTO VIEWER: opened by clicking a photo in a project card -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" type="button" aria-label="Close photo">&times;</button>
+    <button class="lightbox-btn prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="lightbox-btn next" type="button" aria-label="Next photo">&#8250;</button>
+    <figure class="lightbox-stage">
+      <img id="lightbox-img" alt="">
+      <figcaption id="lightbox-count"></figcaption>
+    </figure>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
